@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>나만의 동기부여 홈화면 만들기</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-image: url(https://a.cdn-hotels.com/gdcs/production150/d1979/7f6b3cf0-f585-11e8-a5a3-0242ac110006.jpg?impolicy=fcrop&w=800&h=533&q=medium);
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        color: white;
+        overflow: hidden;
+      }
+
+      .time {
+        font-size: 80px;
+        font-weight: bold;
+      }
+
+      .greeting {
+        font-size: 50px;
+      }
+
+      .todo {
+        font-size: 30px;
+      }
+
+      .author {
+        font-size: 25px;
+        font-style: italic;
+      }
+
+      .main {
+        width: 100vw;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .quote {
+        width: 100vw;
+        height: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <div class="main">
+      <div id="time" class="time"></div>
+      <div class="greeting">Hello Hanyoung!</div>
+      <div class="todo">매일 코딩 하기!</div>
+    </div>
+    <div class="quote">
+      <div id="author" class="author">- -</div>
+      <div id="content" class="content">" "</div>
+    </div>
+  </body>
+</html>
